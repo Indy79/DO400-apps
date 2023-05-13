@@ -9,7 +9,6 @@ import com.redhat.training.books.Book;
 import com.redhat.training.books.BookNotAvailableException;
 import com.redhat.training.inventory.Inventory;
 
-
 @ApplicationScoped
 public class Library {
 
@@ -49,7 +48,7 @@ class LoanRegistry {
 
     public int count() {
         int count = 0;
-        for (ArrayList<Book> studentLoans: loans.values()) {
+        for (ArrayList<Book> studentLoans : loans.values()) {
             count += studentLoans.size();
         }
         return count;
